@@ -43,7 +43,7 @@ const defaultMenu = {
 ⫹⫺ Aine
 ⫹⫺ Ferdi Z Afk
 ⫹⫺ Frm Developer
-⫹⫺ Ardi 
+⫹⫺ ArdhiXs
 ╰─────────────⬣
 `,
 }
