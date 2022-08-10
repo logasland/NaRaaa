@@ -175,7 +175,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: '❤️INSTAGRAM❤️',
-                                    url: 'https://www.instagram.com/ardhixs_/'
+                                    url: 'https://www.instagram.com/logasland/'
                                 }
                             }, {
                                 quickReplyButton: {
