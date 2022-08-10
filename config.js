@@ -1,15 +1,16 @@
 let fs = require('fs') 
 let chalk = require('chalk')
 
-global.wm2 = '兰｢ȺɍđħɨXs｣兰'
+global.wm2 = 'NaRaa💕'
 global.apikeyar = 'ardhixs.herokuapp.com'
 global.instagram = 'https://instagram.com/ardhixs_/' //ganti pakai Instagram mu
 global.fotonya1 = 'https://i.ibb.co/1RRbRYY/thumb.jpg' //ganti jadi foto bot mu
 global.fotonya2 = 'https://i.ibb.co/1RRbRYY/thumb.jpg' //ini juga ganti pakai foto bot mu
 global.owner = [
-  ['6288295249563'],
+  ['6288220924312'],
+  ['6283819392007'],
   ['6288294052009'],
-  ['6288294052009', 'Owner', true]
+  ['6288220924312', 'Owner', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
