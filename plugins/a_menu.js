@@ -550,77 +550,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
     }
     
 //━━━━━━━━[ SETTINGS MENU ]━━━━━━━━//
-    text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(fotonya2)).buffer()}, { upload: conn.waUploadToServer }) 
-      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-      templateMessage: {
-          hydratedTemplate: {
-            imageMessage: message.imageMessage, 
-            hydratedContentText: text, 
-            hydratedFooterText: wm2, 
-            hydratedButtons: [{
-            urlButton: {
-               displayText: '💟INSTAGRAM💟',
-               url: instagram
-             }
 
-           },
-             {
-             urlButton: {
-               displayText: '🔥APIKEY🔥', 
-               url: apikeyar
-             }
-
-           },
-               {
-             quickReplyButton: {
-               displayText: '💹SPEED TEST',
-               id: '.speedtest',
-             }
-
-           },
-               {
-             quickReplyButton: {
-        displayText: 'PING🔔',
-               id: '.ping',
-             }
-
-           },
-           {
-             quickReplyButton: {
-               displayText: '💢OWNER💢',
-               id: '.owner',
-             }
-           }]
-         }
-       }
-     }), { userJid: m.sender, quoted: m });
-     //conn.reply(m.chat, text.trim(), m)
-    return await conn.relayMessage(
-         m.chat,
-         template.message,
-         { messageId: template.key.id }
-     )
-} catch (e) {
-    conn.reply(m.chat, 'Maaf, menu sedang error', m)
-    throw e
-  }
-}
-handler.help = ['menu']
-handler.tags = ['main']
-handler.command = /^(menu|help|\?)$/i
-handler.owner = false
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
-handler.register = true
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
-handler.exp = 3
-module.exports = handler
 
 //━━━━━━━━[  JANGAN DI UBAH  ]━━━━━━━━//
 const more = String.fromCharCode(8206)
